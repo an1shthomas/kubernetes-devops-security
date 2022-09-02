@@ -45,6 +45,7 @@ pipeline {
             // true = set pipeline to UNSTABLE, false = don't
             waitForQualityGate abortPipeline: true
         }
+      }
     }
 
     stage('Docker Build and Push') {
